@@ -1,0 +1,11 @@
+--- origsrc/ephoto/data/images/Makefile.am	2013-08-01 01:13:52.000000000 -0500
++++ src/ephoto/data/images/Makefile.am	2013-08-01 01:27:28.007384600 -0500
+@@ -1,7 +1,7 @@
+ MAINTAINERCLEANFILES = Makefile.in Makefile
+ 
+ IMAGES = \
+-*.png
++$(wildcard $(srcdir)/*.png)
+ 
+ imagesdir = $(pkgdatadir)/images
+ images_DATA = $(IMAGES)
